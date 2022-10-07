@@ -1,5 +1,5 @@
 const gridd = document.querySelector('#gridd');
-gridd.style.cssText = 'display: flex; flex-wrap: wrap; border:1px solid black; height:320px; width: 320px;';
+gridd.style.cssText = 'display: flex; flex-wrap: wrap; border:0px; height:320px; width: 320px;';
 
 
 for(let i = 256; i > 0; i--){
@@ -13,3 +13,11 @@ for(let i = 256; i > 0; i--){
     }
     addGrid();
 }
+window.onclick = hoverEffect;
+
+function hoverEffect() {
+    gridd.addEventListener("mouseover", (event) => {event.target.style.background = 'gray';})
+    
+}
+
+
